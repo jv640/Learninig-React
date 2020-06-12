@@ -5,10 +5,12 @@ import Greet from './components/Greet'
 import Welcome from './components/Welcome'
 import Hello from './components/Hello'
 import Message from './components/Message'
+import Counter from './components/Counter';
 function App() {
   return (
     <div className="App">
-      <Message />
+      <Counter />
+      {/* <Message /> */}
       {/* <Greet name ="Bruce" heroName = "Batman">     {/*we can pass any number of parameter by passing it as attribute */}
                       {/* important thing is props is immutable we cant change its value inside any component*/}
         {/* <p>this is a children component</p>
