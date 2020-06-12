@@ -4,13 +4,14 @@ import './App.css';
 import Greet from './components/Greet'
 import Welcome from './components/Welcome'
 import Hello from './components/Hello'
-
+import Message from './components/Message'
 function App() {
   return (
     <div className="App">
-      <Greet name ="Bruce" heroName = "Batman">     {/*we can pass any number of parameter by passing it as attribute
-                                    important thing is props is immutable we cant change its value inside any component*/}
-        <p>this is a children component</p>
+      <Message />
+      {/* <Greet name ="Bruce" heroName = "Batman">     {/*we can pass any number of parameter by passing it as attribute */}
+                      {/* important thing is props is immutable we cant change its value inside any component*/}
+        {/* <p>this is a children component</p>
       </Greet>
       <Greet name = "Clark" heroName = "Superman">
         <button>action</button>
@@ -23,7 +24,7 @@ function App() {
       <Welcome name ="Clark" heroName = "Superman" >
         <button>action</button>
       </Welcome>
-      <Welcome name = "Diana" heroName = "Wonder Women"/>
+      <Welcome name = "Diana" heroName = "Wonder Women"/> */}
       
     </div>
   );
