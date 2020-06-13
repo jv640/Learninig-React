@@ -12,6 +12,9 @@ const Greet = (props) => {          // we can use anyname in place of props but 
             </h1>
             {props.children}
         </div>
+
+        // we use div here because we cant return more than one component so we bind these components 
+        // together into one div 
     )
     
 }      // arrow function
