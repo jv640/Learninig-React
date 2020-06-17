@@ -15,11 +15,13 @@ import './App.css';
 // import Inline from './components/Inline';
 // import Form from './components/Form';
 import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
 
 function App() {
   return (
     <div className="App">
-      <ParentComp />
+      <RefsDemo />
+      {/* <ParentComp /> */}
       {/* <Form /> */}
       {/* <StyleSheet />
       <Inline /> */}
