@@ -1,6 +1,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
+import HookCounter from './components/HookCounter';
 // import Greet from './components/Greet'
 // import Welcome from './components/Welcome'
 // import Hello from './components/Hello'
@@ -20,7 +21,7 @@ import RefsDemo from './components/RefsDemo';
 function App() {
   return (
     <div className="App">
-      <RefsDemo />
+      {/* <RefsDemo /> */}
       {/* <ParentComp /> */}
       {/* <Form /> */}
       {/* <StyleSheet />
@@ -49,7 +50,7 @@ function App() {
         <button>action</button>
       </Welcome>
       <Welcome name = "Diana" heroName = "Wonder Women"/> */}
-      
+      <HookCounter />      
     </div>
   );
 }
