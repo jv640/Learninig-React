@@ -6,10 +6,28 @@
 import React, { useState } from 'react'
 
 function HookCounter() {
-    const [count, setcount] = useState(0);
+    const initialCount = 0;    
+    const [count, setcount] = useState(initialCount); // we can use any name inplace of count and setcount.
+                                                    // count is variable and setcount is function
+    const incrementByFive = () => {
+        for(let i = 0; i<5; i++){
+            // setcount(count + 1);
+            // Here value is incremented by only 1 not 5 because this is not a safe way we should have a function
+            // which accept old value as arguement and output new value 
+            setcount(prevCount => prevCount + 1)
+            // and we should do same for other updation in state also 
+        }
+    }
     return (
         <div>
-            <button onClick={ () => setcount(count + 1)}>counter {count}</button>
+            {/* <button onClick={ () => setcount(count + 1)}>counter {count}</button> */}
+
+            count : {count}
+            <button onClick={ () => setcount(initialCount)}>Reset</button>
+            <button onClick={ () => setcount(prevCount => prevCount + 1)}>Increment</button>
+            <button onClick={ () => setcount(prevCount => prevCount - 1)}>Decrement</button>
+            <button onClick={incrementByFive}>Increment by 5</button>
+            
         </div>
     )
 }
