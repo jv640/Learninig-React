@@ -1,6 +1,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
+import ComponentA from './components/ComponentA';
 // import Greet from './components/Greet'
 // import Welcome from './components/Welcome'
 // import Hello from './components/Hello'
@@ -59,7 +60,8 @@ function App() {
       <Hookcounter2 />       */}
       {/* <TitleCounter /> */}
       {/* <MouseCounter /> */}
-      <DataFetching />
+      {/* <DataFetching /> */}
+      <ComponentA />
     </div>
   );
 }
