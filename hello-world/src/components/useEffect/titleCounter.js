@@ -15,7 +15,7 @@ function TitleCounter() {
     //     console.log('useEffect - updating document title')
     //     document.title = `You clicked ${count} times`
     // })
-    
+
     // Here in above useEffect we can se it is getting executed after each letter typed in input but however count 
     // value isn't changing still it is updating that we can handle this in class component using some arguement
     // in lifecycle method and to do same in useEffect we have to pass another arguement which is array of elements
@@ -24,6 +24,7 @@ function TitleCounter() {
         console.log('useEffect - updating document title')
         document.title = `You clicked ${count} times`
     }, [count])
+    // if you want to render a component only one time then set array as empty []
     return (
         <div>
             <input type="text" value={name} onChange={ e => setname(e.target.value)}/>

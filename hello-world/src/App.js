@@ -18,6 +18,7 @@ import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
 import HookCounter from './components/setState/HookCounter';
 import Hookcounter2 from './components/setState/Hookcounter2';
+import MouseCounter from './components/useEffect/MouseCounter';
 import TitleCounter from './components/useEffect/titleCounter';
 import titleCounter from './components/useEffect/titleCounter';
 
@@ -55,7 +56,8 @@ function App() {
       <Welcome name = "Diana" heroName = "Wonder Women"/> */}
       {/* <HookCounter />      
       <Hookcounter2 />       */}
-      <TitleCounter />
+      {/* <TitleCounter /> */}
+      <MouseCounter />
     </div>
   );
 }
