@@ -1,7 +1,6 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import HookCounter from './components/HookCounter';
 // import Greet from './components/Greet'
 // import Welcome from './components/Welcome'
 // import Hello from './components/Hello'
@@ -17,6 +16,8 @@ import HookCounter from './components/HookCounter';
 // import Form from './components/Form';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
+import HookCounter from './components/setState/HookCounter';
+import Hookcounter2 from './components/setState/Hookcounter2';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
       </Welcome>
       <Welcome name = "Diana" heroName = "Wonder Women"/> */}
       <HookCounter />      
+      <Hookcounter2 />      
     </div>
   );
 }
